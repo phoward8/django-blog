@@ -1,0 +1,19 @@
+{% load static %}
+<html>
+<head>
+    <title>Phoebe's Blog</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link href='https://fonts.googleapis.com/css?family=Monofett|Bebas+Neue|Montserrat' rel='stylesheet'>
+</head>
+<body>
+    <div class="page-header">
+        <h1><a href="">Phoebe's Blog</a></h1>
+    </div>
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
