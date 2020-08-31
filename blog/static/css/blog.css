@@ -1,29 +1,59 @@
-h1, h2, p {
+a:link, a:visited, h1, h2 {
+    color: #FFD447;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #D3B03B;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: Monofett;
+    font-size: 150px;
+}
+
+h2 {
+    font-family: Bebas Neue;
+    font-size: 50px;
+}
+
+p {
+    font-family: Montserrat;
+    color: #59C9A5;
+    font-size: 20px;
+}
+
+.page-header h1 {
     margin-left: 50px;
 }
 
 .page-header {
     margin-top: 0px;
+    margin-bottom: 0px;
     background-color: #AA78A6;
     border-bottom: 0px;
 }
 
-.page-header h1, .page-header a, .page-header a:active, .page-header a:visited {
-    font-family: Monofett;
-    font-size: 150px;
-    color: #FFD447;
+.menu {
+    background-color: #c788c2;
+    margin-top: 0px
 }
 
-.post-title h2, .post-title a, .post-title a:active, .post-title a:visited{
-    font-family: Bebas Neue;
-    font-size: 50px;
-    color: #FFD447;
+.menu-icon {
+    font-size: 40px;
+    font-family: Monofett;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content {
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .post{
-    font-family: Montserrat;
-    color: #59C9A5;
-    font-size: 20px;
     margin-bottom: 60px;
 }
 
@@ -31,6 +61,16 @@ h1, h2, p {
     font-size: 15px;
 }
 
- body {
+.post-form textarea, .post-form input {
+    width: 100%;
+    background-color: #374457;
+    border-color: #FFD447;
+    border-style: sol;
+    border-width: 3px;
+    padding: 10px 10px 10px 10px;
+}
+
+ html, body {
+    overflow: auto;
     background-color: #293241;
 }

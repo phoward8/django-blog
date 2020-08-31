@@ -11,6 +11,11 @@
     <div class="page-header">
         <h1><a href="{% url 'post_list' %}">Phoebe's Blog</a></h1>
     </div>
+    {% if user.is_authenticated %}
+        <div class="menu">
+            <a href="{% url 'post_new' %}" class="menu-icon"><span class="glyphicon glyphicon-plus"></span></a>
+        </div>
+    {% endif %}
     <div class="content">
         {% block content %}
         {% endblock %}
